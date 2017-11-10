@@ -1,0 +1,1 @@
+"use strict";onload=function(){var e=document.getElementById("list");ajax({url:"http://60.205.181.47/myPHPCode4/getRank.php",data:{},success:function(n){console.log(n);for(var t=JSON.parse(n),a=0;a<t.length;a++){var o=t[a],c=document.createElement("li");e.appendChild(c),c.innerHTML=a+1+". ["+o.name+"] : "+o.score}}})};
